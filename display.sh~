@@ -1,0 +1,13 @@
+#!/usr/bin/bash
+
+for i in $(ls); do
+    feh $i
+    printf "Displaying $i\n\n"
+
+    read -n watcher
+    case $watcher in:
+        Q|q)
+            break;
+        ;;
+    esac
+done
