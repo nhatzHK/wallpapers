@@ -36,4 +36,4 @@ Otherwise assume everything here is free to use under the MIT License.
 
 ## Contributors
 
-* @ezekiel-lemur
+* [@ezekiel-lemur](https://github.com/ezekiel-lemur)
