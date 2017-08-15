@@ -11,7 +11,10 @@ like. That's like a basic rule in society or something.
 ### Conribute
 
 1. Fork the repository
-2. Add your wallpapers (with meaningful names if possible)
+2. Add your wallpapers 
+  * With meaningful names if possible
+  * Without incorrect sRGB
+  * Without spaces or hyphens in the names (underscore ftw)
 3. Make a PR
 
 ### Use
