@@ -1,14 +1,15 @@
 #!/usr/bin/bash
 
 quit=0
-for i in $(ls); do
+for i in $(ls | grep -sE "*.png|*.jpg"); do
     printf "Displaying $i\n\n"
-    feh $i & FEH_PID=$!
+    feh -xdpq $i & FEH_PID=$!
 
     next=1
     quit=1
     until [[ $next == 0 ]] || [[ $quit -eq 0 ]]; do
         read -n 1 -p ":>" watcher
+        printf "\n"
         case $watcher in
             N|n)
                 kill $FEH_PID
@@ -16,7 +17,6 @@ for i in $(ls); do
                 ;;
             Q|q)
                 kill $FEH_PID
-                printf "\n"
                 quit=0
                 break
                 ;;
